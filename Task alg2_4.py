@@ -13,18 +13,16 @@ Created on Tue Feb 15 21:04:27 2022
 """
 import unittest
 
-def natural(n:int):
+def natural(lists:int):
     s = 0
   
-    for i in range(1,abs(n)+1):
-            s += i
+    for digit in range(1,abs(lists)+1):
+            s += digit
             
-    if s == round(n*(n+1)/2):
+    if s == round(lists*(lists+1)/2):
         print('ok')
         return ('OK')
-    else:
-        print('NOT ok')
-        return ('NOT OK')
+    
         
     
 natural(10)
