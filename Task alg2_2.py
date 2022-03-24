@@ -7,16 +7,16 @@ Created on Tue Feb 15 15:03:31 2022
 """
 import unittest
 
-def desc_number(n:int):
-    itog =0
-    while n > 0:
-        d = n % 10
-        n = n // 10
-        itog = itog * 10
-        itog = itog + d 
+def desc_number(number:int):
+    result=0
+    while number > 0:
+        digit = number % 10
+        number = number // 10
+        result = result * 10
+        result = result + digit 
  
-    print(f'Обратка:, {itog}')
-    return itog   
+    print(f'Обратка:, {result}')
+    return result   
 
 
 
